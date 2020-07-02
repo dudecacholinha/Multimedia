@@ -1,4 +1,4 @@
 # Multim-dia
 Some of the mini-games made for a game in the course of Multimédia
 
-![GitHub Logo](Puzzle/Images/273240-7.jpg)
+![GitHub Logo](Final_Result/hamburguer3.PNG)![GitHub Logo](Final_Result/hamburguer2.PNG)
