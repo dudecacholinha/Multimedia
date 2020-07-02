@@ -1,0 +1,45 @@
+
+.container2{
+  background: url("wallp.jpg")  center fixed; 
+  background-size: cover;
+
+}
+.container{
+    position: absolute;
+    right: 15%;
+    bottom: 1%;
+}
+.up {
+    position: absolute;
+    left: 64px;
+    bottom:64px ;
+}
+.down {
+    position: absolute;
+    left: 64px;
+    bottom:0px;
+}
+.left {
+    position: absolute;
+    bottom:32px;
+    left: 32px;
+}
+.right {
+    position: absolute;
+    bottom:32px;
+    left: 96px;
+}
+button
+{
+   cursor: pointer;
+    position: relative;
+    background-color: inherit;
+    border: none;
+    padding: 0px;
+}
+
+button img
+{
+	margin: 0px;
+	height: 24px;
+}
