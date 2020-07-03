@@ -20,7 +20,7 @@ function main()
 	//funções locais para gestão de eventos
 	function initEndHandler(ev)
 	{
-		//instalar listeners do rato	
+		//"instalar" listeners do rato	
 		window.addEventListener("mousedown",teste2);
 		window.addEventListener("mouseup",mouseuppppp);
 		ctx.canvas.addEventListener('mousemove',mexe);
@@ -59,7 +59,6 @@ function main()
 	
 		draw(ctx, spArray);
 		draw(ctx,vida);
-		//nao sei onde por isto
 	}
 		var mexe = function(ev)
 	{
@@ -121,7 +120,7 @@ function init(ctx)
 	img2.id="pao_cima";
 	img2.src = "pao_1.png";  //dá ordem de carregamento da imagem
 
-	var img3 = new Image();   //dá ordem de carregamento da imagem
+	var img3 = new Image();
 	img3.addEventListener("load", imgLoadedHandler);
 	img3.id="queijo";
 	img3.src = "queijo.png";
@@ -308,9 +307,6 @@ if(x!=-1){
 			img.src = "alface_baixo.png";
 	}
 	if(spArray[x].img.id=="campainha"){
-		/*console.log(">>>>>>>>>>>>>>>>>>>");
-		print_teste(Hamburguer);
-		console.log("<<<<<<<<<<<<<<<<<");*/
 		if(verefica_burguer(Hamburguer,spArray[10])==1){
 			aux.splice(aux.length-1,aux.length);
 			if(aux.length>0){
@@ -355,7 +351,6 @@ if(x!=-1){
 		
 
 	}
-	//haaaaaaaaaaa
 	if(spArray[x].img.id=="reset"){
 		Hamburguer.length=0;
 		Hamburguer.length=32;
@@ -373,7 +368,7 @@ if(x!=-1){
 
 	}
 }
-//nao foi em nenhum does geradores
+//nao foi em nenhum dos geradores
 var y=em_qual(ev,ctx,arrastaa);
 
 if(y!=-1){
@@ -545,7 +540,7 @@ function reset_array(arrastaa){
 		arrastaa[i]= 'undefined';
 	}
 }
-//esta funcçao ve o outro click e retira drag a parte do if(x_>275....)esquece e para o meu mini jogog
+//esta funcçao ve o outro click e retira drag 
 function retira(ev,ctx,spArray,Hamburguer,arrastaa,vida){
 	var x=where(arrastaa);
 	var aux;
@@ -604,7 +599,6 @@ function verefica_burguer(Ham,sp){
 	print_teste(Ham);
 	if(id=="1"){
 		if(tamanho_burguer(Ham)==3){
-			console.log("menos mal");
 			if(Ham[0].img.id=="pao_baixo" && Ham[1].img.id=="hamburguer"&& Ham[2].img.id=="pao_cima"){
 				return 1;
 			}
@@ -620,7 +614,6 @@ function verefica_burguer(Ham,sp){
 	}
 	if(id=="2"){
 		if(tamanho_burguer(Ham)==4){
-			console.log("menos mal");
 			if(Ham[0].img.id=="pao_baixo" && Ham[1].img.id=="hamburguer"&& Ham[2].img.id=="queijo"&&Ham[3].img.id=="pao_cima"){
 				return 1;
 			}
@@ -637,7 +630,6 @@ function verefica_burguer(Ham,sp){
 	}
 	if(id=="3"){
 		if(tamanho_burguer(Ham)==5){
-			console.log("menos mal");
 			if(Ham[0].img.id=="pao_baixo" && Ham[1].img.id=="hamburguer"&& Ham[2].img.id=="tomate"&&Ham[3].img.id=="alface"&&Ham[4].img.id=="pao_cima"){
 				return 1;
 			}
@@ -653,7 +645,6 @@ function verefica_burguer(Ham,sp){
 	}
 	if(id=="4"){
 		if(tamanho_burguer(Ham)==6){
-			console.log("menos mal");
 			if(Ham[0].img.id=="pao_baixo" && Ham[1].img.id=="hamburguer"&& Ham[2].img.id=="queijo"&&Ham[3].img.id=="hamburguer"&&Ham[4].img.id=="queijo"&&Ham[5].img.id=="pao_cima"){
 				return 1;
 			}
@@ -668,8 +659,7 @@ function verefica_burguer(Ham,sp){
 
 	}
 	if(id=="5"){
-			if(tamanho_burguer(Ham)==6){
-			console.log("menos mal");
+		if(tamanho_burguer(Ham)==6){
 			if(Ham[0].img.id=="pao_baixo" && Ham[1].img.id=="hamburguer"&& Ham[2].img.id=="pao_baixo"&&Ham[3].img.id=="hamburguer"&&Ham[4].img.id=="queijo"&&Ham[5].img.id=="pao_cima"){
 				return 1;
 			}
@@ -685,8 +675,7 @@ function verefica_burguer(Ham,sp){
 
 	}
 	if(id=="6"){
-			if(tamanho_burguer(Ham)==5){
-				console.log("menos mal");
+		if(tamanho_burguer(Ham)==5){
 			if(Ham[0].img.id=="pao_baixo" && Ham[1].img.id=="tomate"&& Ham[2].img.id=="hamburguer"&&Ham[3].img.id=="queijo"&&Ham[4].img.id=="pao_cima"){
 				return 1;
 			}
@@ -701,8 +690,7 @@ function verefica_burguer(Ham,sp){
 
 	}
 	if(id=="7"){
-			if(tamanho_burguer(Ham)==6){
-				console.log("menos mal");
+		if(tamanho_burguer(Ham)==6){
 			if(Ham[0].img.id=="pao_baixo" && Ham[1].img.id=="hamburguer"&& Ham[2].img.id=="tomate"&&Ham[3].img.id=="hamburguer"&&Ham[4].img.id=="tomate"&&Ham[5].img.id=="pao_cima"){
 				return 1;
 			}
@@ -718,7 +706,6 @@ function verefica_burguer(Ham,sp){
 	}
 	if(id=="8"){
 		if(tamanho_burguer(Ham)==9){
-			console.log("menos mal");
 			if(Ham[0].img.id=="pao_baixo" && Ham[1].img.id=="hamburguer"&& Ham[2].img.id=="tomate"&&Ham[3].img.id=="alface"&&Ham[4].img.id=="pao_baixo"&&Ham[5].img.id=="hamburguer"&&Ham[6].img.id=="tomate"&&Ham[7].img.id=="alface"&&Ham[8].img.id=="pao_cima"){
 				return 1;
 			}
@@ -733,7 +720,6 @@ function verefica_burguer(Ham,sp){
 
 
 	}
-	console.log("Nao me fodas");
 	/*console.log(tamanho_burguer(Ham));
 	if(tamanho_burguer(Ham)==3){
 	if(Ham[0].img.id=="pao_baixo" && Ham[1].img.id=="hamburguer"&& Ham[2].img.id=="pao_cima"){
