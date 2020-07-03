@@ -383,6 +383,7 @@ function puzzle_selecionado(ev,ctx,spArray){
 	}
 	return -1;
 }
+//meter um for em vez desta condiçao enorme.
 function verifica(ev,ctx,spArray){
 	if(spArray[0].img.id=="0"&&spArray[1].img.id=="1"&&spArray[2].img.id=="2"&&spArray[3].img.id=="3"&&spArray[4].img.id=="4"&&spArray[5].img.id=="5"&&spArray[6].img.id=="6"&&spArray[7].img.id=="7"&&spArray[8].img.id=="8"){
 		return true;
