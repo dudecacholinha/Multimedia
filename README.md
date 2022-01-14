@@ -1,5 +1,5 @@
 # Multim-dia
-Some of the mini-games made for a game in the course of Multimédia
+Some of the mini-games made for a game in the course of Multim\édia
 
 <h2> Hamburguer Mini-Game</h2> 
 
